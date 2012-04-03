@@ -2,7 +2,7 @@ import sun.audio.*;
 import java.io.*;
 import java.util.Random;
 
-class AudioTest
+class Voldemort
 {
 	public int getRand(int max)
 	{
@@ -31,7 +31,7 @@ class AudioTest
 	
 	public static void main(String[] args) 
 	{
-		AudioTest audiotest = new AudioTest();
+		Voldemort audiotest = new Voldemort();
 		int answer =(audiotest.getRand(3));
 		System.out.println("my answer is: "+answer);
 		audiotest.play(audiotest.getTrack(0));
