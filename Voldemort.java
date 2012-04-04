@@ -31,10 +31,10 @@ class Voldemort
 	
 	public static void main(String[] args) 
 	{
-		Voldemort audiotest = new Voldemort();
-		int answer =(audiotest.getRand(3));
+		Voldemort voldemort = new Voldemort();
+		int answer =(voldemort.getRand(3));
 		System.out.println("my answer is: "+answer);
-		audiotest.play(audiotest.getTrack(0));
-		audiotest.play(audiotest.getTrack(answer));
+		voldemort.play(voldemort.getTrack(0));
+		voldemort.play(voldemort.getTrack(answer));
 	}
 }
