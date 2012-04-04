@@ -1,0 +1,13 @@
+<project name="Voldermort" default="dist" basedir=".">
+  <description>a Voldermort builder</description>
+  <target name="compile">
+    <javac srcdir="."/>
+  </target>
+  <target name="dist" depends="compile">
+    <zip destfile="voldemort.zip" basedir="." includes="sounds/*" excludes="build.xml,Voldermort.java"/>
+  </target>
+  <target name="clean">
+    <delete file="*.java"/>
+    <delete file="*.zip"/>
+  </target>
+</project>
