@@ -4,10 +4,9 @@
     <javac srcdir="."/>
   </target>
   <target name="dist" depends="compile">
-    <zip destfile="voldemort.zip" basedir="." includes="sounds/*" excludes="build.xml,Voldermort.java"/>
+    <zip destfile="voldemort.zip" basedir="." includes="sounds/*,*.java,readme.txt" excludes="build.xml,Voldermort.java"/>
   </target>
   <target name="clean">
-    <delete file="*.java"/>
-    <delete file="*.zip"/>
+    <delete dir="." includes="*.class,*.zip"/>
   </target>
 </project>
